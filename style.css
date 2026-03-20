@@ -1,0 +1,26 @@
+h1{
+	color: #d3bf08;
+	text-align: center ;
+	font-size: 250%;
+}
+h2{
+	color: #867003;
+	border: #94c8b1 1px dotted;
+	border-left: #d0e35b 10px solid;
+	padding: 5px 20px;
+	margin-bottom: 0;
+}
+#wrap{
+	width: 798px;
+	margin: 40px auto;
+	padding: 40px 80px;
+	border: #f6bb9e 1px solid;
+	background-color: #fff;
+}
+body{
+background-position: center;
+background-color: #fbf9cc;
+background-size: 600px ;
+background-repeat: no-repeat;
+background-attachment: fixed; 
+}
