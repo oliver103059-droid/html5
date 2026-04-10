@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>給黑豆的信</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: '標楷體', 'serif', Georgia;
+            background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc8 100%);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .letter {
+            background-color: #fefbf5;
+            width: 100%;
+            max-width: 600px;
+            padding: 60px 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            border: 1px solid #e5d9c7;
+            position: relative;
+            line-height: 2;
+        }
+
+        .letter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d3bf08, transparent);
+        }
+
+        .date {
+            text-align: right;
+            color: #867003;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .greeting {
+            color: #867003;
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .content {
+            color: #333;
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            text-align: justify;
+            word-spacing: 0.2em;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            margin-top: 50px;
+            text-align: right;
+            color: #867003;
+            font-size: 1.1em;
+        }
+
+        .signature-name {
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .letter {
+                padding: 40px 30px;
+            }
+
+            .content {
+                font-size: 1em;
+            }
+
+            .greeting {
+                font-size: 1.1em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>黑豆、、、請自行退社、、、</h1>
+    <div class="letter">
+        <div class="date">西元 2026 年 4 月 10 日</div>
+
+        <div class="greeting">黑豆、、、</div>
+
+        <div class="content">
+            <p>請自行退社、、、</p>
+        </div>
+
+        <div class="signature">
+            <div class="signature-name">黃氏兄弟 敬上</div>
+        </div>
+    </div>
 </body>
 </html>
