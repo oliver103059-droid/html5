@@ -177,3 +177,55 @@ a:hover {
 		width: 100%;
 	}
 }
+
+/* 猜數字遊戲樣式 */
+.game-container {
+	max-width: 700px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 1px solid #f0e6c2;
+	background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.9));
+	border-radius: 10px;
+}
+.game-controls {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin: 10px 0 15px 0;
+}
+#guess-input {
+	flex: 1 1 160px;
+	padding: 10px 12px;
+	border-radius: 6px;
+	border: 1px solid #e6d6a8;
+	font-size: 1rem;
+}
+.game-feedback {
+	margin-top: 8px;
+	padding: 10px;
+	background: #fff8e6;
+	border: 1px dashed #f0e0b0;
+	border-radius: 6px;
+	color: #5a4c00;
+}
+.game-meta {
+	margin-top: 8px;
+	color: #6b5a00;
+	font-weight: 600;
+}
+
+/* 介紹區樣式 */
+.about-section {
+	margin-bottom: 24px;
+}
+.about-section h2 {
+	margin-bottom: 12px;
+}
+.about-section p {
+	margin-bottom: 10px;
+	color: #403400;
+}
+.about-section h3 {
+	margin-top: 12px;
+	margin-bottom: 8px;
+}

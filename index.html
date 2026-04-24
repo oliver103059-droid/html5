@@ -17,7 +17,17 @@
 <div id='wrap'>
 
 
-<h2>精彩MV</h2>
+  <!-- 黃氏兄弟介紹 -->
+  <section id="about" class="about-section">
+    <h2>黃氏兄弟介紹</h2>
+    <p>黃氏兄弟（英語：Huang Brothers）是一個台灣YouTuber二人組，由兄弟黃挺瑋（藝名「瑋瑋」，英文名 Wei）及黃雍哲（藝名「哲哲」，英文名 Zhe）組成。</p>
+    <p>除了主頻道「黃氏兄弟」外，後續開設副頻道「黃氏兄弟遊戲頻道」、「黃氏兄弟開箱頻道」、「哲哲日常」、「瑋瑋 黃挺瑋 Wei」。頻道以「做一個有溫度的人」作為標語，以日常、開箱、3C產品實測、翻唱、整人等主題為主。</p>
+    <h3>經歷</h3>
+    <p>黃氏兄弟於2017年4月4日上傳首部影片。</p>
+    <p>黃氏兄弟自頻道達三十萬訂閱後，每十萬訂閱推出一部公益影片，包括曾召集魚乾、黃大謙、三原慧悟等逾百名創作者合唱張惠妹歌曲《彩虹》支持婚姻平權。</p>
+  </section>
+
+  <h2>精彩MV</h2>
 <ul class="mv-list">
   <li>
     <h3>不專心</h3>
@@ -25,8 +35,54 @@
       <iframe src="https://www.youtube.com/embed/0GzLgn2fgcI?si=9WAXrzSyVgjJOM9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </li>
+  <li>
+    <h3>PR99</h3>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/gljJmAgYF1U?si=Fr4dCn0A6SiJbV5I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </li>
+  <!-- 新增的 MV（佔位）：請將下面的 href/iframe src 換成正式的 YouTube embed 連結 -->
+  <li>
+    <h3>專家模式</h3>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/x8AP-2aLEeE?si=zV-oVi2fCbtQmRxp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </li>
+  <li>
+    <h3>多想告訴你</h3>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/BT2tg7QphVU?si=hxzI9xbRfMgLfrVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </li>
+  <li>
+    <h3>我的新座位</h3>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWYFHrJj4dI?si=h9t0Dq2p2SZ4YvTS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </li>
+  <li>
+    <h3>bye了極限</h3>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XvmGi-4lb3w?si=dgoPU6myT-gBdLmh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </li>
 </ul>
 <p></p>
 </div>
+
+<!-- 猜數字遊戲 -->
+<section id="guess-game" class="game-container" aria-labelledby="game-title">
+  <h2 id="game-title">猜數字遊戲</h2>
+  <p>我想了一個 1 到 100 的數字，你有 <span id="max-attempts">7</span> 次機會來猜。輸入數字後按「猜」或按 Enter。</p>
+  <div class="game-controls">
+    <input id="guess-input" type="number" min="1" max="100" placeholder="輸入 1 - 100 的數字" aria-label="猜的數字">
+    <button id="guess-btn" class="btn btn-primary">猜</button>
+    <button id="restart-btn" class="btn btn-secondary">重新開始</button>
+  </div>
+  <div id="feedback" class="game-feedback" aria-live="polite"></div>
+  <div class="game-meta">已猜次數：<span id="attempts">0</span> / <span id="max">7</span></div>
+</section>
+
+<script src="yellowbean.js"></script>
 </body>
 </html>
